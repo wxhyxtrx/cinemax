@@ -36,7 +36,7 @@ const Tab = () => {
   }, [pathname]);
 
   return (
-    <div className="bg-primary-light w-full fixed bottom-0 p-2 allDekstop:w-96 shadow-[0px_-10px_35px_-25px] shadow-black">
+    <div className="bg-primary-light w-full lg:max-w-sm allDekstop:max-w-sm fixed mx-auto bottom-0 p-2 shadow-[0px_-10px_35px_-25px] shadow-black">
       <ul className="w-full flex gap-4 justify-center allTab:text-xl">
         {menuAll.map((menu, idx) => {
           const isActive = menuActive === menu.url;
